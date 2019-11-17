@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
 
+console.log('Post model initiated......')
+
 const postSchema = new mongoose.Schema({
     content: {
         type: String,

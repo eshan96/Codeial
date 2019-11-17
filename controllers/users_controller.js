@@ -17,13 +17,15 @@ module.exports.signUp = function(req,res) {
 
 //render the sign in page
 module.exports.signIn = function(req,res) {
-
+        console.log('sign in conroller called')
       if(req.isAuthenticated()) {
             return res.redirect('/users/profile')
       }
       return res.render('user_sign_in',{
             title: "Codeial | Sign Up"
+            
       })
+
 }
 
 module.exports.create = function(req, res) {
